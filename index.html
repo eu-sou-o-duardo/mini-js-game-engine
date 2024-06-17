@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="view port" content="width=device-width, initial-scale=1.0" />
+  <title>Game engine</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <div>
+    <div id="app"></div>
+    <footer>
+      <button id="mute-unmute" class="button">
+        <span class="button__inner">
+          Mute &#128264;
+        </span>
+      </button>
+      <a href="">Github</a>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+  <script>
+    document.getElementById('mute-unmute').addEventListener('click', () => {
+      window.muted = !
+        window.muted
+
+      document.getElementById('mute-unmute').classList.toggle('active')
+      document.getElementById('mute-unmute').blur();
+    })
+  </script>
+</body>
+
+</html>

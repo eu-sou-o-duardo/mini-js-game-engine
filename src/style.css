@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #140f0f;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app {
+  display: inline-block;
+  padding: 4px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4) inset,
+    0px 7px 13px -3px rgba(0, 0, 0, 0.3) inset,
+    2px -2px 18px 0px rgba(0, 0, 0, 0.2) inset;
+  border: 1px solid transparent;
+  background: linear-gradient(rgb(49, 23, 23), rgb(55, 24, 24)) padding-box,
+    linear-gradient(to right, rgb(31, 15, 15), rgb(40, 35, 42)) border-box;
+}
+canvas {
+  display: block;
+  border-bottom: 2px solid #524949;
+  border-radius: 8px;
+  color: #cbcbcb;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4),
+    0px 7px 13px -3px rgba(0, 0, 0, 0.3), 0 0 10px #727e6073;
+}
+
+.button {
+  display: block;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4) inset,
+    0px 7px 13px -3px rgba(0, 0, 0, 0.3) inset,
+    2px -2px 18px 0px rgba(0, 0, 0, 0.2) inset;
+  border: 1px solid transparent;
+  background: linear-gradient(rgb(49, 23, 23), rgb(55, 24, 24)) padding-box,
+    linear-gradient(to right, rgb(31, 15, 15), rgb(35, 31, 37)) border-box;
+}
+
+.button__inner {
+  display: block;
+  padding-inline: 10px;
+  padding-block: 5px;
+  background: linear-gradient(#6d5656, #2e2525);
+  border-bottom: 2px solid #292121;
+  border-radius: 8px;
+  color: #989494;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4),
+    0px 7px 13px -3px rgba(0, 0, 0, 0.3);
+  text-shadow: -1px -1px 1px #000, 1px 1px 1px #2d2626;
+}
+
+.button.active .button__inner {
+  color: #cac8f1;
+  text-shadow: -1px -1px 2px #114fcc, 1px 1px 2px #114fcc;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
